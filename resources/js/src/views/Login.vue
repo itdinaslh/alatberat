@@ -4,9 +4,8 @@
 
       <!-- Brand logo-->
       <b-link class="brand-logo">
-        <vuexy-logo />
         <h2 class="brand-text text-primary ml-1">
-          Vuexy
+          UPST Alat Berat
         </h2>
       </b-link>
       <!-- /Brand logo-->
@@ -41,10 +40,10 @@
             title-tag="h2"
             class="font-weight-bold mb-1"
           >
-            Welcome to Vuexy! 👋
+            System Manajemen Alat Berat UPST
           </b-card-title>
           <b-card-text class="mb-2">
-            Please sign-in to your account and start the adventure
+            Login untuk mengakses system.
           </b-card-text>
 
           <!-- form -->
@@ -130,51 +129,16 @@
                 block
                 @click="validationForm"
               >
-                Sign in
+               Login
               </b-button>
             </b-form>
           </validation-observer>
 
-          <b-card-text class="text-center mt-2">
-            <span>New on our platform? </span>
-            <b-link :to="{name:'page-auth-register-v2'}">
-              <span>&nbsp;Create an account</span>
-            </b-link>
-          </b-card-text>
-
           <!-- divider -->
           <div class="divider my-2">
             <div class="divider-text">
-              or
+              UPST
             </div>
-          </div>
-
-          <!-- social buttons -->
-          <div class="auth-footer-btn d-flex justify-content-center">
-            <b-button
-              variant="facebook"
-              href="javascript:void(0)"
-            >
-              <feather-icon icon="FacebookIcon" />
-            </b-button>
-            <b-button
-              variant="twitter"
-              href="javascript:void(0)"
-            >
-              <feather-icon icon="TwitterIcon" />
-            </b-button>
-            <b-button
-              variant="google"
-              href="javascript:void(0)"
-            >
-              <feather-icon icon="MailIcon" />
-            </b-button>
-            <b-button
-              variant="github"
-              href="javascript:void(0)"
-            >
-              <feather-icon icon="GithubIcon" />
-            </b-button>
           </div>
         </b-col>
       </b-col>
@@ -186,7 +150,6 @@
 <script>
 /* eslint-disable global-require */
 import { ValidationProvider, ValidationObserver } from 'vee-validate'
-import VuexyLogo from '@core/layouts/components/Logo.vue'
 import {
   BRow, BCol, BLink, BFormGroup, BFormInput, BInputGroupAppend, BInputGroup, BFormCheckbox, BCardText, BCardTitle, BImg, BForm, BButton,
 } from 'bootstrap-vue'
@@ -210,7 +173,6 @@ export default {
     BImg,
     BForm,
     BButton,
-    VuexyLogo,
     ValidationProvider,
     ValidationObserver,
   },
